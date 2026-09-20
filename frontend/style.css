@@ -22,3 +22,22 @@ header {
 .card .role { color: var(--brand); font-weight: bold; }
 body.dark { background: #1a1a1a; color: #eee; }
 body.dark .card { background: #2b2b2b; }
+/* 다크모드 전환을 부드럽게 */
+body {
+    color: #1a2230;
+    transition: background 0.3s, color 0.3s;
+}
+
+.card .role { margin: 8px 0; }
+
+/* 바닥글 */
+footer { text-align: center; padding: 30px; color: #888; }
+
+/* 좁은 화면: 헤더를 세로로 쌓기 */
+@media (max-width: 600px) {
+    header { flex-direction: column; gap: 12px; }
+}
+.card p { word-break: keep-all; }
+.card h2 { margin-bottom: 12px; }
+.card p { line-height: 1.7; }
+.card img { width: 120px; height: 120px; object-fit: cover; }

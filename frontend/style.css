@@ -41,3 +41,14 @@ footer { text-align: center; padding: 30px; color: #888; }
 .card h2 { margin-bottom: 12px; }
 .card p { line-height: 1.7; }
 .card img { width: 120px; height: 120px; object-fit: cover; }
+/* 기술 배지 */
+.badges { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.badge {
+    background: #e6f0ee;
+    color: #2f6f6a;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: bold;
+}
+body.dark .badge { background: #1f3a37; color: #7fd1c4; }
